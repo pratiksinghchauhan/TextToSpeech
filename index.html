@@ -3,25 +3,6 @@
 <head>
     <title>Text-to-Speech Example Application</title>
     <script>
-        /*
-         * This sample code requires a web browser with support for both the
-         * HTML5 and ECMAScript 5 standards; the following is a non-comprehensive
-         * list of compliant browsers and their minimum version:
-         *
-         * - Chrome 23.0+
-         * - Firefox 21.0+
-         * - Internet Explorer 9.0+
-         * - Edge 12.0+
-         * - Opera 15.0+
-         * - Safari 6.1+
-         * - Android (stock web browser) 4.4+
-         * - Chrome for Android 51.0+
-         * - Firefox for Android 48.0+
-         * - Opera Mobile 37.0+
-         * - iOS (Safari Mobile and Chrome) 3.2+
-         * - Internet Explorer Mobile 10.0+
-         * - Blackberry Browser 10.0+
-         */
 
         // Mapping of the OutputFormat parameter of the SynthesizeSpeech API
         // and the audio format strings understood by the browser
@@ -31,9 +12,7 @@
             'pcm': 'audio/wave; codecs=1'
         };
 
-        /**
-         * Handles fetching JSON over HTTP
-         */
+
         function fetchJSON(method, url, onSuccess, onError) {
             var request = new XMLHttpRequest();
             request.open(method, url, true);
