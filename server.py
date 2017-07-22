@@ -1,25 +1,4 @@
-""" 
-Example Python 2.7+/3.3+ Application
 
-This application consists of a HTTP 1.1 server using the HTTP chunked transfer
-coding (https://tools.ietf.org/html/rfc2616#section-3.6.1) and a minimal HTML5
-user interface that interacts with it.
-
-The goal of this example is to start streaming the speech to the client (the
-HTML5 web UI) as soon as the first consumable chunk of speech is returned in
-order to start playing the audio as soon as possible.
-For use cases where low latency and responsiveness are strong requirements,
-this is the recommended approach.
-
-The service documentation contains examples for non-streaming use cases where
-waiting for the speech synthesis to complete and fetching the whole audio stream
-at once are an option.
-
-To test the application, run 'python server.py' and then open the URL
-displayed in the terminal in a web browser (see index.html for a list of
-supported browsers). The address and port for the server can be passed as
-parameters to server.py. For more information, run: 'python server.py -h'
-"""
 from argparse import ArgumentParser
 from collections import namedtuple
 from contextlib import closing
